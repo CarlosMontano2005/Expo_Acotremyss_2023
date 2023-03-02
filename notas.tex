@@ -1,0 +1,229 @@
+ <section class="portafolio">
+      <div class="contenedor">
+        <h2 class="titulo">Convenios</h2>
+        <div class="galeria-port">
+          <div class="imagen-port">
+            <img src="imagenes/LCR.jpg" alt="">
+            <a href="https://www.impressarepuestos.com/elsalvador/" target="blank">
+            <div class="hover-galeria">      
+              <img src="imagenes/natural_user_interface_2_52px.png" alt="">
+              <p>Ver el contenido</p>
+            </div>
+            </a>
+          </div>
+          <div class="imagen-port">
+            <img src="imagenes/EconoParts.png" alt="">
+          <a href="https://www.impressarepuestos.com/elsalvador/" target="blank">
+            <div class="hover-galeria">
+              <img src="imagenes/natural_user_interface_2_52px.png" alt="">
+              <p>Ver el contenido</p>
+            </div>
+          </a>
+          </div> 
+          <div class="imagen-port">
+            <img src="imagenes/ImpressaRepuestos.png" alt="">
+            <a href="https://www.impressarepuestos.com/elsalvador/" target="blank">
+            <div class="hover-galeria">
+              <img src="imagenes/natural_user_interface_2_52px.png" alt="">
+              <p>Ver el contenido</p>
+            </div>
+          </a>
+          </div> 
+        </div>
+      </div>
+    </section>
+    /*Galeria CSS/
+    .portafolio{
+      background-color:white;
+    }
+    .galeria-port{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      
+    }
+    .imagen-port{
+        width: 24%;
+      
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow:  0 0 6px 0 rgb(0, 0, .5);
+    }
+    .imagen-port >img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .hover-galeria{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: hsla(165, 100%, 29%,0.7);
+        transition: transform .5;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        transform: scale(0);
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .hover-galeria img{
+        width: 50px;
+    }
+    .hover-galeria p{
+        color: #fff;
+    }
+    .imagen-port:hover .hover-galeria{
+        transform: scale(1);
+        transition: all 0.5s ease-in-out 0s;
+    }
+    
+    @media screen and (max-width:900px) {
+        .imagen-port{
+            width: 44%;
+        }
+    }
+    /*Card perfiles*/
+    /*Card*/
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.card{
+    width: 30%;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:15px 0;
+    box-shadow: .5rem .5rem .3rem   rgba(0, 0, 0, 0);
+
+}
+.card .card-img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+
+}
+.profile-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius:50%;
+    margin-top: -10em;
+    z-index: 500;
+    border: 0.5rem solid #fff;
+}
+.card h1{
+    font-size: 30px;
+    color: #333;
+}
+.job-title{
+    color: #777;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.about{
+    font-size: 15px;
+
+    text-align: center;
+    color: #333;
+}
+.card .btn{
+    padding:1rem 2.5rem;
+    background-color: #00926E;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s;
+}
+.card .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2); 
+}
+.card .btn:active{
+    transform: translateY(0);
+    box-shadow:none; 
+}
+.social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    
+    border-top:1px solid rgba(0, 0, 0, .1);
+}
+.social-media i{
+    font-size: 2rem;
+    transition:color .5s ;
+}
+.fa-facebook-f{
+    color: #3b5999;
+}
+.fa-instagram{
+    display: inline-block;
+    
+    text-align: center;
+    border-radius: 30%;
+    color: #fff;
+    font-size: 220px;
+    line-height: auto;
+    vertical-align: middle;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.fa-twitter{
+    color: #55acee;
+}
+.fa-whatsapp{
+    color: #25D366;
+}
+.fab:hover{
+    color: #009225;
+}
+/*html*/
+  
+<div class="card-wrapper">
+  <div class="card">
+    <img src="imagenes/Artesanias.jpg" alt="" class="card-img">
+    <img src=" https://concepto.de/wp-content/uploads/2018/08/persona-e1533759204552.jpg" alt="" class="profile-img">
+    <h1>Carlos Roberto Montano</h1>
+    <p class="job-title">Asociado</p>
+    <p>Venta de artesania y sillas</p>
+    <a href="#" class="btn">Contactar</a>
+    <ul class="social-media">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>   
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>   
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>     
+    </ul>
+  </div>
+<div class="card">
+    <img src="imagenes/pan.PNG" alt="" class="card-img">
+    <img src=" https://concepto.de/wp-content/uploads/2018/08/persona-e1533759204552.jpg" alt="" class="profile-img">
+    <h1>Carlos Roberto Montano</h1>
+    <p class="job-title">Asociado</p>
+    <p>Panadería Jireh</p>
+    <a href="#" class="btn">Contactar</a>
+    <ul class="social-media">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>   
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>   
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>     
+    </ul>
+  </div>
+</div>

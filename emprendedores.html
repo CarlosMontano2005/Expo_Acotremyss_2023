@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acotremyss</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="imagenes/logo.png" type="">
+    <script src="https://kit.fontawesome.com/d3c5be6f45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/estilos-emprendedore.css">
+    <script defer src="js/main.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+      </style>
+      
+</head>
+<body>
+    <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "293039484370417");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  <header  class="logo logo_main">
+    <div class="logo-img">
+      <img src="imagenes/logo.png" alt="logo"> 
+    </div>
+    <div class="texto-logo">
+        <h1> ACOTREMYSS</h1>
+        <p>Asociacion Cooperativa De Aprovisionamiento, Ahorro y Crédito</p>
+    </div>
+  
+  </header>
+  <div class="nav">
+    <div class="wrap">
+      <div class="logo logo_small"> <img src="imagenes/logo.png" alt="logo"> ACOTREMYSS</div>
+        <nav>
+          <ul class="enlaces-menu">
+            <li><a href="index.html"><i class="fas fa-home"> Inicio</i></a></li>
+            <li><a href="#contactos"><i class="fas fa-phone-alt"> Contactos</i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <main >
+    <section class="portafolio">
+      <div class="contenedor">
+        <h2 class="titulo">Tienda</h2>
+        <div class="galeria-port">
+          <div class="imagen-port">
+            <img src="imagenes/Artesanias.jpg" alt="">
+            <a href="artesanias.html">
+            <div class="hover-galeria">
+              <img src="imagenes/natural_user_interface_2_52px.png" alt="">
+              <p>Artesanias</p>
+            </div>
+          </a>
+          </div>
+          <div class="imagen-port">
+            <img src="imagenes/pan.PNG" alt="">
+            <a href="comida.html">
+            <div class="hover-galeria">
+              <img src="imagenes/natural_user_interface_2_52px.png" alt="">
+              <p>Comida</p>
+            </div>
+            </a>
+          </div>
+          <div class="imagen-port">
+            <img src="imagenes/tecnicos.jpeg" alt="">  
+            <a href="servicios.html">
+            <div class="hover-galeria">
+              <img src="imagenes/natural_user_interface_2_52px.png" alt="">
+              <p>Servicios</p>
+            </div> 
+          </a>
+          </div>
+          <div class="imagen-port">
+            <img src="imagenes/medicina.jfif" alt="">
+            <a href="medicina.html">
+            <div class="hover-galeria">
+              <img src="imagenes/natural_user_interface_2_52px.png" alt="">
+              <p>Salud</p>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contactos">
+    <div class="contenedor-footer">
+      <div class="content-foo">
+        <h4><i class="fab fa-whatsapp">Whatsapp</i></h4>
+        <a href="https://api.whatsapp.com/send?phone= +50376259336&text=Tengo%20una%20pregunta" target="blank"><p>7625-9336</p></a>
+        <a href="https://api.whatsapp.com/send?phone= +50377458284&text=Tengo%20una%20pregunta" target="blank"><p>7745-8284</p></a>
+      </div>
+      <div class="content-foo">
+        <h4><i class="far fa-envelope">Email</i></h4>
+        <a href="mailto:acotremyss@outlook.es" target="blank"><p>acotremyss@utlook.es</p></a>
+      </div>
+      <div class="content-foo">
+        <h4><i class="fab fa-facebook">facebook</i></h4>
+        <a href="https://www.facebook.com/Acotremyss" target="blank"><p>Acotremyss de R.L.</p></a>
+      </div>
+    </div>
+    <h2 class="titulo-final">&copy;Creador web: Carlos Roberto Montano Hernadez | montanocarlos2005@outlook.com </h2>
+  </footer>
+  <i class="fas fa-caret-down btn-menu"></i>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+</html>

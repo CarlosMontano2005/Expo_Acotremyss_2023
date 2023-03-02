@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acotremyss</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="imagenes/logo.png" type="">
+    <script src="https://kit.fontawesome.com/d3c5be6f45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/estilos-historia.css">
+    <link rel="stylesheet" href="js/main.js">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+      </style>
+      
+</head>
+<body>
+    <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "293039484370417");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  <header  class="logo logo_main">
+    <div class="logo-img">
+      <img src="imagenes/logo.png" alt="logo"> 
+    </div>
+    <div class="texto-logo">
+        <h1> ACOTREMYSS</h1>
+        <p>Asociacion Cooperativa De Aprovisionamiento, Ahorro y Crédito</p>
+    </div>
+  
+  </header>
+  <div class="nav">
+    <div class="wrap">
+      <div class="logo logo_small"> <img src="imagenes/logo.png" alt="logo"> ACOTREMYSS</div>
+        <nav>
+          <ul class="enlaces-menu">
+            <li><a href="index.html"><i class="fas fa-home"> Inicio</i></a></li>
+            <li><a href="#contactos"><i class="fas fa-phone-alt"> Contactos</i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <main>
+    <section class="contenedor">
+        <h2 class="titulo">COMIENZO DE ACOTREMYSS</h2>
+        <p>El proyecto cooperativo nació en el municipio de Mejicanos en el año 2016 para apoyarnos como gremio de transportistas escolares ante la falta de oportunidades de trabajo, Créditos y prestaciones sociales, y ordenarlos como un sector laboral.          
+        Pero no fue hasta el año 2017, en que fuimos legalmente constituidos por INSAFOCOOP como una COOPERATIVA DE APROVISIONAMIENTO, AHORRO Y CREDITO DE LOS TRABAJADORES ESCOLARES DE MEJICANOS Y SAN SALVADOR.</p>
+        <div class="contenedor-consejos">
+            <div class="card-consejo">        
+                <div class="card-contenedor">
+                    <img src="imagenes/ConsejoAdmin-2.jpg" alt="CONSEJO ADMINISTRATIVO 1">
+                </div>
+                <div class="detalles-card">
+                    <h3>SEGUNDO CONSEJO ADMINISTRATIVO AÑO 2020</h3>
+                </div>
+            </div>
+            <div class="card-consejo">        
+              <div class="card-contenedor">
+                  <img src="imagenes/ConsejoAdmin-1.jpg" alt="CONSEJO ADMINISTRATIVO 1">    
+              </div>
+              <div class="detalles-card">
+                  <h3>PRIMER CONSEJO ADMINISTRATIVO AÑO 2017</h3>
+              </div>
+          </div>
+        </div> 
+    </section>
+  </main>
+  <footer id="contactos">
+    <div class="contenedor-footer">
+      <div class="content-foo">
+        <h4><i class="fab fa-whatsapp">Whatsapp</i></h4>
+        <a href="https://api.whatsapp.com/send?phone= +50376259336&text=Tengo%20una%20pregunta" target="blank"><p>7625-9336</p></a>
+        <a href="https://api.whatsapp.com/send?phone= +50377458284&text=Tengo%20una%20pregunta" target="blank"><p>7745-8284</p></a>
+      </div>
+      <div class="content-foo">
+        <h4><i class="far fa-envelope">Email</i></h4>
+        <a href="mailto:acotremyss@outlook.es" target="blank"><p>acotremyss@utlook.es</p></a>
+      </div>
+      <div class="content-foo">
+        <h4><i class="fab fa-facebook">facebook</i></h4>
+        <a href="https://www.facebook.com/Acotremyss" target="blank"><p>Acotremyss de R.L.</p></a>
+      </div>
+    </div>
+    <h2 class="titulo-final">&copy;Creador web: Carlos Roberto Montano Hernadez | montanocarlos2005@outlook.com </h2>
+  </footer>
+  <i class="fas fa-caret-down btn-menu"></i>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+</html>

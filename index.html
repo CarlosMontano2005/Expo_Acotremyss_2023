@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acotremyss</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="imagenes/logo.png" type="">
+    <script src="https://kit.fontawesome.com/d3c5be6f45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script defer src="js/main.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+      </style>
+      
+</head>
+<body>
+ <!-- Messenger plugin de chat Code -->
+ <div id="fb-root"></div>
+
+ <!-- Your plugin de chat code -->
+ <div id="fb-customer-chat" class="fb-customerchat">
+ </div>
+
+ <script>
+   var chatbox = document.getElementById('fb-customer-chat');
+   chatbox.setAttribute("page_id", "293039484370417");
+   chatbox.setAttribute("attribution", "biz_inbox");
+
+   window.fbAsyncInit = function() {
+     FB.init({
+       xfbml            : true,
+       version          : 'v12.0'
+     });
+   };
+
+   (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+ </script>
+    <header  class="logo logo_main">
+      <div class="logo-img">
+        <img src="imagenes/logo.png" alt="logo"> 
+      </div>
+      <div class="texto-logo">
+          <h1> ACOTREMYSS</h1>
+          <p>Asociacion Cooperativa De Aprovisionamiento, Ahorro y Crédito</p>
+      </div>
+    
+    </header>
+    <div class="nav">
+      <div class="wrap">
+        <div class="logo logo_small"> <img src="imagenes/logo.png" alt="logo"> ACOTREMYSS</div>
+          <nav>
+            <ul class="enlaces-menu">
+              <li><a href="#inicio"><i class="fas fa-home"> Inicio</i></a></li>
+              <li><a href="#contactos"><i class="fas fa-phone-alt"> Contactos</i></a></li>
+              <li><a href="#nosotros"><i class="fas fa-user-tie"> Nosotros</i> </a></li>
+              <li><a href="#servicio"><i class="fas fa-hand-holding-usd"> Servicios</i></a></li>
+              <li><a href="#convenios"><i class="fas fa-handshake"> Convenios</i></a></li>
+              <li><a href="emprendedores.html"><i class="fas fa-users"> Emprendedores</i></a></li>
+              <li><a href="historia.html"><i class="fas fa-book-open"> Historia</i></a></li>
+              
+          </ul>
+        </nav>
+      </div>
+    </div>
+  <main id="inicio">
+    <section id="nosotros" class="container sobre-nosotros">
+        <h2 class="titulo">ACOTREMYSS</h2>
+        <div class="contenedor-sobre-nosotros">
+          <img src="imagenes/imagen1.png" alt="" class="imagen-about-us">
+          <div class="contenido-textos">
+            <h3><span>1</span>MISIÓN</h3>
+            <p>Ser una asociación Cooperativa, comprometida con nuestros asociados, su grupo familiar, proveerles beneficios financieros, ahorros, créditos, manteniendo siempre una gestión eficiente, honesta y responsable.
+            </p>
+            <h3><span>2</span>VISIÓN</h3>
+            <p>Impulsar el desarrollo económico de nuestros Asociados apoyando sus proyectos de emprendedurismo, con los principios fundamentales del Cooperativismo, con un sistema de ahorro y crédito.</p>
+            <h3><span>3</span>NUESTROS PRINCIPIOS</h3>
+            <ul>
+              <li>Igualda</li>
+              <li>Solidaridad</li>
+              <li>Ayuda Mutua</li>
+            </ul>
+            <h3><span>4</span>OBJETIVOS</h3>
+            <P>Ser una verdadera asociación cooperativa unificando nuestros es esfuerzos   aportando el capital semilla para obtener beneficios de créditos para el sostén de nuestros negocios y mejorar nuestras condiciones económicas y sociales. 
+            </P>
+            <ul>
+              
+              <li>Hacer del endeudamiento un instrumento de apalancamiento para financiar los proyectos de inversión.</li>
+            </ul>
+            
+          </div>
+      
+        </div>
+    </section>
+    <!--
+    <section class="container">
+      <div class="slider">
+        <div class="slide active">
+          <img src="imagenes/PublicidadMisalud.jpeg" alt="">
+        </div>
+        <div class="slide">
+          <img src="imagenes/MiSalud.jpg" alt="">
+        </div>
+        <div class="navigation">
+          <i class="fas fa-chevron-left prev-btn"></i>
+          <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+        </div>
+      </div>
+    </section>
+    -->
+    <section id="servicio" class="servicios contenedor">
+      <h2 class="titulo">SERVICIOS</h2>
+      <h3 class="subtitulo">Requisitos para ser miembro</h3>
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="content-time">
+              <h3>PRIMERO</h3>
+              <p>Llenar el formulario de solicitud de inscripción.</p>
+            </div>
+            <div class="time">
+              <h4>1</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content-time">
+              <h3>SEGUNDO</h3>
+              <p>Anexar copia de DUI y NIT. Recibo de Agua o Luz.</p>
+            </div>
+            <div class="time">
+              <h4>2</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content-time">
+              <h3>TERCERO</h3>
+              <p>Anexar 2 referencias de asociados activos ó 2 referencias personales.</p>
+            </div>
+            <div class="time">
+              <h4>3</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content-time">
+              <h3>CUARTO</h3>
+              <p>Llenado de Formulario.</p>
+            </div>
+            <div class="time">
+              <h4>4</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content-time">
+              <h3>QUINTO</h3>
+              <p>Cancelar la cuota única de inscripción $15.00 y $5.00 de aportación inicial.</p>
+            </div>
+            <div class="time">
+              <h4>5</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content-time">
+              <h3>DESCARGAR SOLICITUD</h3>
+              <a href="documentos/Formulario de solicitud de ingreso Acotremyss (1).pdf" download="Formulario de solicitud de ingreso Acotremyss" class="btn-neon">
+                  <span id="span1"></span>
+                  <span id="span2"></span>
+                  <span id="span3"></span>
+                  <span id="span4"></span>
+                  FORMULARIO
+              </a>
+            </div>
+            <div class="time">
+              <h4>➡</h4>
+            </div>
+          </li>
+          <div style="clear:both;"></div>
+        </ul>
+      </div>
+    </section>
+    <section class="container beneficios">
+      <h2 class="titulo">Beneficios</h2>
+      <div class="container-beneficios">
+        <div class="card-benedicio">
+          <div class="img-beneficio">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="door-open" class="svg-inline--fa fa-door-open fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M624 448h-80V113.45C544 86.19 522.47 64 496 64H384v64h96v384h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM312.24 1.01l-192 49.74C105.99 54.44 96 67.7 96 82.92V448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h336V33.18c0-21.58-19.56-37.41-39.76-32.17zM264 288c-13.25 0-24-14.33-24-32s10.75-32 24-32 24 14.33 24 32-10.75 32-24 32z"></path></svg>
+          </div>
+          <div class="tex-benficio">
+            <p>Menbresia abierta.</p>
+          </div>
+        </div>
+        <div class="card-benedicio">
+          <div class="img-beneficio">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="puzzle-piece" class="svg-inline--fa fa-puzzle-piece fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"></path></svg>
+          </div>
+          <div class="tex-benficio">
+            <p>Control democrático.</p>
+          </div>
+        </div>
+        <div class="card-benedicio">
+          <div class="img-beneficio">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-line" class="svg-inline--fa fa-chart-line fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"></path></svg>
+          </div>
+          <div class="tex-benficio">
+            <p>Capacitaciones (INSAFOCOOP, Conamype)</p>
+          </div>
+        </div>
+        <div class="card-benedicio">
+          <div class="img-beneficio">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-check-alt" class="svg-inline--fa fa-money-check-alt fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M608 32H32C14.33 32 0 46.33 0 64v384c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zM176 327.88V344c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-16.29c-11.29-.58-22.27-4.52-31.37-11.35-3.9-2.93-4.1-8.77-.57-12.14l11.75-11.21c2.77-2.64 6.89-2.76 10.13-.73 3.87 2.42 8.26 3.72 12.82 3.72h28.11c6.5 0 11.8-5.92 11.8-13.19 0-5.95-3.61-11.19-8.77-12.73l-45-13.5c-18.59-5.58-31.58-23.42-31.58-43.39 0-24.52 19.05-44.44 42.67-45.07V152c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v16.29c11.29.58 22.27 4.51 31.37 11.35 3.9 2.93 4.1 8.77.57 12.14l-11.75 11.21c-2.77 2.64-6.89 2.76-10.13.73-3.87-2.43-8.26-3.72-12.82-3.72h-28.11c-6.5 0-11.8 5.92-11.8 13.19 0 5.95 3.61 11.19 8.77 12.73l45 13.5c18.59 5.58 31.58 23.42 31.58 43.39 0 24.53-19.05 44.44-42.67 45.07zM416 312c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16zm160 0c0 4.42-3.58 8-8 8h-80c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16zm0-96c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h272c4.42 0 8 3.58 8 8v16z"></path></svg>
+          </div>
+          <div class="tex-benficio">
+            <p>Prestamos (En base a las aportaciones el 80%)</p>
+          </div>
+        </div>
+        <div class="card-benedicio">
+          <div class="img-beneficio">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-holding-usd" class="svg-inline--fa fa-hand-holding-usd fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M271.06,144.3l54.27,14.3a8.59,8.59,0,0,1,6.63,8.1c0,4.6-4.09,8.4-9.12,8.4h-35.6a30,30,0,0,1-11.19-2.2c-5.24-2.2-11.28-1.7-15.3,2l-19,17.5a11.68,11.68,0,0,0-2.25,2.66,11.42,11.42,0,0,0,3.88,15.74,83.77,83.77,0,0,0,34.51,11.5V240c0,8.8,7.83,16,17.37,16h17.37c9.55,0,17.38-7.2,17.38-16V222.4c32.93-3.6,57.84-31,53.5-63-3.15-23-22.46-41.3-46.56-47.7L282.68,97.4a8.59,8.59,0,0,1-6.63-8.1c0-4.6,4.09-8.4,9.12-8.4h35.6A30,30,0,0,1,332,83.1c5.23,2.2,11.28,1.7,15.3-2l19-17.5A11.31,11.31,0,0,0,368.47,61a11.43,11.43,0,0,0-3.84-15.78,83.82,83.82,0,0,0-34.52-11.5V16c0-8.8-7.82-16-17.37-16H295.37C285.82,0,278,7.2,278,16V33.6c-32.89,3.6-57.85,31-53.51,63C227.63,119.6,247,137.9,271.06,144.3ZM565.27,328.1c-11.8-10.7-30.2-10-42.6,0L430.27,402a63.64,63.64,0,0,1-40,14H272a16,16,0,0,1,0-32h78.29c15.9,0,30.71-10.9,33.25-26.6a31.2,31.2,0,0,0,.46-5.46A32,32,0,0,0,352,320H192a117.66,117.66,0,0,0-74.1,26.29L71.4,384H16A16,16,0,0,0,0,400v96a16,16,0,0,0,16,16H372.77a64,64,0,0,0,40-14L564,377a32,32,0,0,0,1.28-48.9Z"></path></svg>
+          </div>
+          <div class="tex-benficio">
+            <p>Ahorro programado.</p>
+          </div>
+        </div>
+        <div class="card-benedicio">
+          <div class="img-beneficio">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-invoice-dollar" class="svg-inline--fa fa-file-invoice-dollar fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-153 31V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM64 72c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8V72zm0 80v-16c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8zm144 263.88V440c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-24.29c-11.29-.58-22.27-4.52-31.37-11.35-3.9-2.93-4.1-8.77-.57-12.14l11.75-11.21c2.77-2.64 6.89-2.76 10.13-.73 3.87 2.42 8.26 3.72 12.82 3.72h28.11c6.5 0 11.8-5.92 11.8-13.19 0-5.95-3.61-11.19-8.77-12.73l-45-13.5c-18.59-5.58-31.58-23.42-31.58-43.39 0-24.52 19.05-44.44 42.67-45.07V232c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v24.29c11.29.58 22.27 4.51 31.37 11.35 3.9 2.93 4.1 8.77.57 12.14l-11.75 11.21c-2.77 2.64-6.89 2.76-10.13.73-3.87-2.43-8.26-3.72-12.82-3.72h-28.11c-6.5 0-11.8 5.92-11.8 13.19 0 5.95 3.61 11.19 8.77 12.73l45 13.5c18.59 5.58 31.58 23.42 31.58 43.39 0 24.53-19.05 44.44-42.67 45.07z"></path></svg>
+          </div>
+          <div class="tex-benficio">
+            <p>Credito de consumo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container planes">
+      <h4 class="titulo">Acotremyss previsión</h4>
+      <div class="container-card-planes">  
+        <div class="card">
+          <figure>
+            <img src="imagenes/familia1.jpg">
+          </figure>
+          <div class="contenido-card">
+            <h3>Plan Basico $8.00</h3>
+            <ul class="lista">
+              <li>Aportaciones $5.00</li>
+              <li>Asistencia funeraria $3.00</li>
+            </ul>     
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="imagenes/familia2.jpg">
+          </figure>
+          <div class="contenido-card">
+            <h3>Plan Bronce $9.00</h3>
+            <ul class="lista">
+              <li>Aportaciones $5.00</li>
+              <li>Seguro de vida $4.00</li>
+            </ul>     
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="imagenes/familia3.jpg">
+          </figure>
+          <div class="contenido-card">
+            <h3>Plan Plata $12.00</h3>
+            <ul class="lista">
+              <li>Aportaciones $5.00</li>
+              <li>Seguro de vida $4.00</li>
+              <li>Asistencia funeraria $3.00</li>
+            </ul>     
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="imagenes/familia4.jpg">
+          </figure>
+          <div class="contenido-card">
+            <h3>Plan Oro $13.50</h3>
+            <ul class="lista">
+              <li>Aportaciones $5.00</li>
+              <li>Seguro de vida $4.00</li>
+              <li>Asistencia funeraria con cripta $4.50</li>
+            </ul>     
+          </div>
+        </div>
+      </div>
+    </section>
+   <section class="container-carousel" id="convenios">
+     <div class="Carousel">
+      <h2 class="titulo">Convenios</h2>
+      <div class="slick-list" id="slick-list">
+        <button class="slick-arrow slick-prev" id="button-prev">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+        </button>
+        <div class="slick-track" id="track">
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Consultas Medicas</small>Consultas</h4>
+                <picture>
+                  <img src="imagenes/consulta-medica.jpg" alt="consultas-medicas">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Convenios de Asociados</small>Convenios</h4>
+                <picture>
+                  <img src="imagenes/convenios.jpg" alt="convenios">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Alcaldía</small>Alcaldía</h4>
+                <picture>
+                  <img src="imagenes/alcadia-Sa.png" alt="alcadia-Sa">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Asesorías Juridica</small>Asesorías Juridica</h4>
+                <picture>
+                  <img src="imagenes/aseseores-juridicos.jpg" alt="aseseores-juridicos">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Asesorías de Seguros de Vida</small>Asesorías Seguros Vida</h4>
+                <picture>
+                  <img src="imagenes/aseseores-segurosvida.jpg" alt="aseseores-segurosvida">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Asesorías de Seguros de Vehiculos</small>Seguros de Vehiculos</h4>
+                <picture>
+                  <img src="imagenes/aseseores-seguros-vehiculos.jpg" alt="aseseores-seguros-vehiculos">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Talleres Mecanicos</small>Talleres Mecanicos</h4>
+                <picture>
+                  <img src="imagenes/talleres-mecanicos.jpg" alt="talleres-mecanicos">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Grúas</small>Grúas</h4>
+                <picture>
+                  <img src="imagenes/grua.jpg" alt="Gruas">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Veterinarias</small>Veterinarias</h4>
+                <picture>
+                  <img src="imagenes/veterinarias.jpg" alt="veterinaria">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slick">
+            <div>
+              <a href="#">
+                <h4><small>Laboratorios Clinicos</small>Laboratorios Clinicos</h4>
+                <picture>
+                  <img src="imagenes/laboratorios-clinicos.jpg" alt="laboratorios-clinicos">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="slick-arrow slick-next" id="button-next">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+        </button>
+      </div>  
+     </div> 
+   </section>
+   <section class="Comentarios" id="conmentario">
+    <div class="ctn-lbl-comentarios">
+     <h3 class="subtitulo">Comentarios</h3>
+     <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://acotremyss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+   </section>
+  </main>
+  <footer id="contactos">
+    <div class="contenedor-footer">
+      <div class="content-foo">
+        <h4><i class="fab fa-whatsapp">Whatsapp</i></h4>
+        <a href="https://api.whatsapp.com/send?phone= +50376259336&text=Tengo%20una%20pregunta" target="blank"><p>7625-9336</p></a>
+        <a href="https://api.whatsapp.com/send?phone= +50379890149&text=Tengo%20una%20pregunta" target="blank"><p>7989-0149</p></a>
+      </div>
+      <div class="content-foo">
+        <h4><i class="far fa-envelope">Email</i></h4>
+        <a href="mailto:acotremyss@outlook.es" target="blank"><p>acotremyss@utlook.es</p></a>
+      </div>
+      <div class="content-foo">
+        <h4><i class="fab fa-facebook">facebook</i></h4>
+        <a href="https://www.facebook.com/Acotremyss" target="blank"><p>Acotremyss de R.L.</p></a>
+      </div>
+    </div>
+    <h2 class="titulo-final">&copy;Creador web: Carlos Roberto Montano Hernadez | montanocarlos2005@outlook.com </h2>
+  </footer>
+ 
+  <i class="fas fa-caret-down btn-menu"></i>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+  const slider = document.querySelector(".slider")
+  const nextBtn = document.querySelector(".next-btn");
+  const prevBtn = document.querySelector(".prev-btn");
+  const slides = document.querySelectorAll(".slide");
+  const slidesIcons = document.querySelectorAll(".slide-icon");
+  const nuberOFSlides = slides.length;
+  var slideNumber = 0;
+
+  //imagen slider next button 
+  nextBtn.addEventListener("click", () =>{
+    slides.forEach((slide)=>{
+      slide.classList.remove("active")
+    });
+    slidesIcons.forEach((slidesIcon)=>{
+      slidesIcon.classList.remove("active")
+    });
+    slideNumber++;
+
+
+    if(slideNumber > (nuberOFSlides - 1)){
+      slideNumber = 0;
+    }
+
+    slides[slideNumber].classList.add("active");
+    slidesIcons[slideNumber].classList.add("active");
+  })
+
+    //image slider previos  button
+    prevBtn.addEventListener("click", () =>{
+      slides.forEach((slide)=>{
+      slide.classList.remove("active")
+    });
+    slidesIcons.forEach((slidesIcon)=>{
+      slidesIcon.classList.remove("active")
+    });
+    slideNumber--
+
+
+    if(slideNumber < 0){
+      slideNumber = nuberOFSlides - 1;
+    }
+
+    slides[slideNumber].classList.add("active");
+    slidesIcons[slideNumber].classList.add("active");
+
+    })
+//image slider autoplay
+  var playSlider;
+    
+  var repeater = () =>{
+      playSlider = setInterval(function(){
+        slides.forEach((slide)=>{
+      slide.classList.remove("active")
+    });
+    slidesIcons.forEach((slidesIcon)=>{
+      slidesIcon.classList.remove("active")
+    });
+    slideNumber++;
+
+
+    if(slideNumber > (nuberOFSlides - 1)){
+      slideNumber = 0;
+    }
+
+    slides[slideNumber].classList.add("active");
+    slidesIcons[slideNumber].classList.add("active");
+      },4000);
+  }
+  repeater();
+
+  //stop the image slider autoplay on mouseover
+  slider.addEventListener("mouseover",()=>{
+    clearInterval(playSlider);
+  })
+
+  //star the image slider autoplay again on mouset
+  slider.addEventListener("mouseover",()=>{
+    repeater();
+  })
+</script>
+<script src="js/main.js">
+
+</script>
+</html>
