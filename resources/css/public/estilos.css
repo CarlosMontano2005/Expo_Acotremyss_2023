@@ -55,8 +55,8 @@ main{
     height: 200px;
     padding: 200px;
     background: #a8ff78;  /* fallback for old browsers */
-    background: linear-gradient(to right, hsla(162, 100%, 74%, 0.678), hsla(99, 100%, 74%, 0.603)),url(fondo-negocios-baner.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, hsla(162, 100%, 74%, 0.678), hsla(99, 100%, 74%, 0.603)),url(fondo-negocios-baner.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(162, 100%, 74%, 0.678), hsla(99, 100%, 74%, 0.603)),url(/CSS/fondo-negocios-baner.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(162, 100%, 74%, 0.678), hsla(99, 100%, 74%, 0.603)),url(/CSS/fondo-negocios-baner.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     ;
     background-size: cover;
     display: flex;
