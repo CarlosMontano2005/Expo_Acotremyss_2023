@@ -4,19 +4,19 @@ let searchBtn = document.querySelector(".bx-search");
 
 closeBtn.addEventListener("click", () => {
     sidebar.classList.toggle("open");
-    menuBtnChange();//calling the function(optional)
+    menuBtnChange();//llamando a la función (opcional)
 });
 
-searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+searchBtn.addEventListener("click", () => { // Barra lateral abierta al hacer clic en la búsqueda iocn
     sidebar.classList.toggle("open");
-    menuBtnChange(); //calling the function(optional)
+    menuBtnChange(); //llamando a la función (opcional)
 });
 
-// following are the code to change sidebar button(optional)
+// los siguientes son el código para cambiar el botón de la barra lateral (opcional)
 function menuBtnChange() {
     if (sidebar.classList.contains("open")) {
-        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//reemplazando la clase iocns
     } else {
-        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//reemplazando la clase iocns
     }
 }
