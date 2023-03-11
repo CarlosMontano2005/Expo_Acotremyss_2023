@@ -4,58 +4,114 @@
 */
 
 // Constante para completar la ruta de la API.
-const USER_API = 'business/dashboard/usuario.php';
+//const USER_API = 'business/dashboard/usuario.php';
 // Constantes para establecer las etiquetas de encabezado y pie de la página web.
 const HEADER = document.querySelector('header');
 const FOOTER = document.querySelector('footer');
 
 // Método manejador de eventos para cuando el documento ha cargado.
-document.addEventListener('DOMContentLoaded', async () => {
+//document.addEventListener('DOMContentLoaded', async () => {
     // Petición para obtener en nombre del usuario que ha iniciado sesión.
-    const JSON = await dataFetch(USER_API, 'getUser');
+    //const JSON = await dataFetch(USER_API, 'getUser');
     // Se verifica si el usuario está autenticado, de lo contrario se envía a iniciar sesión.
-    if (JSON.session) {
+    //if (JSON.session) {
         // Se comprueba si existe un alias definido para el usuario, de lo contrario se muestra un mensaje con la excepción.
-        if (JSON.status) {
-            HEADER.innerHTML = `
-                <div class="navbar-fixed">
-                    <nav>
-                        <div class="nav-wrapper">
-                            <a href="main.html" class="brand-logo"><img src="../../resources/img/logo.png" height="60"></a>
-                            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                            <ul class="right hide-on-med-and-down">
-                                <li><a href="productos.html"><i class="material-icons left">shop</i>Productos</a></li>
-                                <li><a href="categorias.html"><i class="material-icons left">shop_two</i>Categorías</a></li>
-                                <li><a href="usuarios.html"><i class="material-icons left">group</i>Usuarios</a></li>
-                                <li>
-                                    <a href="#" class="dropdown-trigger" data-target="desktop-dropdown">
-                                        <i class="material-icons left">verified_user</i>Cuenta: <b>${JSON.username}</b>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <ul id="desktop-dropdown" class="dropdown-content">
-                        <li><a href="profile.html"><i class="material-icons">face</i>Editar perfil</a></li>
-                        <li><a onclick="logOut()"><i class="material-icons">clear</i>Salir</a></li>
-                    </ul>
+       // if (JSON.status) {
+            HEADER.innerHTML = `<div >
+            <div class="logo-details">
+              <!--<i class='bx bxl-c-plus-plus icon'></i>-->
+              <div class="logo_name">SAC</div>
+              <!--<i class='bx bx-menu' id="btn"></i>-->
+            </div>
+            <div class="profile-details">
+              <div class="profile-btn">
+                <div class="btn-user">
+                  <a href="#"><i class="bx bxs-user"></i></a>
                 </div>
-                <ul id="mobile-menu" class="sidenav">
-                    <li><a href="productos.html"><i class="material-icons">shop</i>Productos</a></li>
-                    <li><a href="categorias.html"><i class="material-icons">shop_two</i>Categorías</a></li>
-                    <li><a href="usuarios.html"><i class="material-icons">group</i>Usuarios</a></li>
-                    <li>
-                        <a class="dropdown-trigger" href="#" data-target="mobile-dropdown">
-                            <i class="material-icons">verified_user</i>Cuenta: <b>${JSON.username}</b>
-                        </a>
-                    </li>
-                </ul>
-                <ul id="mobile-dropdown" class="dropdown-content">
-                    <li><a href="profile.html">Editar perfil</a></li>
-                    <li><a onclick="logOut()">Salir</a></li>
-                </ul>
-            `;
-            FOOTER.innerHTML = `
+                <div class="btn_three_points">
+                  <a href="#">
+                    <i class="bx bxs-grid" ></i>
+                  </a>
+                </div>
+              </div>
+              <div class="profile-content">
+                <img
+                  src="/image/private/people/charlie.jpg"
+                  alt="profileImg"
+                  id="img-perfil"
+                />
+              </div>
+              <div class="name-gmail">
+                <div class="profile_name">Hola Charlie</div>
+                <div class="gmail">montanoroberto@gmail.com</div>
+              </div>
+            </div>
+            <ul class="nav-list">
+              <li>
+                <a href="#">
+                  <i class="bx bx-home-alt"></i>
+                  <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bx-folder"></i>
+                  <span class="links_name">Solicitudes</span>
+                </a>
+                <span class="tooltip">Solicitudes</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bx-group"></i>
+                  <span class="links_name">Asociados</span>
+                </a>
+                <span class="tooltip">Asociados</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bx-trending-up"></i>
+                  <span class="links_name">Beneficios</span>
+                </a>
+                <span class="tooltip">Beneficios</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bx-edit"></i>
+                  <span class="links_name">Control</span>
+                </a>
+                <span class="tooltip">Control</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bx-sitemap"></i>
+                  <span class="links_name">Sistema</span>
+                </a>
+                <span class="tooltip">Sistema</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bx-log-out"></i>
+                  <span class="links_name">Cerrar sistema</span>
+                </a>
+                <span class="tooltip">Cerrar sistema</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bx-cog"></i>
+                  <span class="links_name">Ajustes</span>
+                </a>
+                <span class="tooltip">Ajustes</span>
+              </li>
+    
+              <!-- <li class="profile">
+                            
+                            <a href="#"><i class='bx bx-door-open'></i></a>
+                        </li>-->
+            </ul>
+          </div>`;
+          
+          /*  FOOTER.innerHTML = `
                 <div class="container">
                     <div class="row">
                         <div class="col s12 m6">
@@ -125,4 +181,4 @@ document.addEventListener('DOMContentLoaded', async () => {
             location.href = 'index.html';
         }
     }
-});
+});*/
