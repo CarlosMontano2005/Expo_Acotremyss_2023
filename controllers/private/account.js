@@ -8,7 +8,7 @@
 // Constantes para establecer las etiquetas de encabezado y pie de la página web.
 const HEADER = document.querySelector('header');
 const FOOTER = document.querySelector('footer');
-
+const NAV = document.querySelector('nav');
 // Método manejador de eventos para cuando el documento ha cargado.
 //document.addEventListener('DOMContentLoaded', async () => {
     // Petición para obtener en nombre del usuario que ha iniciado sesión.
@@ -110,7 +110,24 @@ const FOOTER = document.querySelector('footer');
                         </li>-->
             </ul>
           </div>`;
-          
+         /* NAV.innerHTML = ` <div class="text" >
+          <i class="bx bx-menu" id="btn"></i>
+          <div class="input-group buscar">
+            <button class="input-group-text rounded-start-pill">
+              <i class="bx bx-search-alt-2"></i>
+            </button>
+            <input
+              type="text"
+              class="form-control rounded-end-pill"
+              id="inlineFormInputGroupUsername"
+              placeholder="Buscar"
+            />
+          </div>
+        </div>
+        <div class="perfil">
+            <p id="name-user" class="">carlos montano</p>
+            <img id="foto-user" class="img-user" src="/image/private/people/charlie.jpg" alt="foto-perfil">
+        </div>`;*/
           /*  FOOTER.innerHTML = `
                 <div class="container">
                     <div class="row">

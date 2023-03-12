@@ -22,30 +22,33 @@
     <link rel="stylesheet" href="/icons/boxicons.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-
+  
   <body>
     <header class="sidebar open"></header>
+    <nav>
+      <div class="text" >
+        <i class="bx bx-menu" id="btn"></i>
+        <div class="input-group buscar">
+          <button class="input-group-text rounded-start-pill">
+            <i class="bx bx-search-alt-2"></i>
+          </button>
+          <input
+            type="text"
+            class="form-control rounded-end-pill"
+            id="inlineFormInputGroupUsername"
+            placeholder="Buscar"
+          />
+        </div>
+      </div>
+      <div class="perfil">
+          <p id="name-user" class="">carlos montano</p>
+          <img id="foto-user" class="img-user" src="/image/private/people/charlie.jpg" alt="foto-perfil">
+      </div>
+    </nav>
     <section class="home-section">
-      <nav >
-        <div class="text" >
-          <i class="bx bx-menu" id="btn"></i>
-          <div class="input-group buscar">
-            <button class="input-group-text rounded-start-pill">
-              <i class="bx bx-search-alt-2"></i>
-            </button>
-            <input
-              type="text"
-              class="form-control rounded-end-pill"
-              id="inlineFormInputGroupUsername"
-              placeholder="Buscar"
-            />
-          </div>
-        </div>
-        <div class="perfil">
-            <p id="name-user" class="">carlos montano</p>
-            <img id="foto-user" class="img-user" src="/image/private/people/charlie.jpg" alt="foto-perfil">
-        </div>
-      </nav>
+      <div class="dashboard-info">
+       
+      </div>
     </section>
     <!--para que funcione el menu-->
     <script
