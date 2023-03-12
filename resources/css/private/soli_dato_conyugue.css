@@ -503,7 +503,7 @@ nav .perfil img{
   padding: 3px;
   border-radius: 6px;
 }
-
+/*tabla titulo y boton*/
 .table-datos{
     background: #eeeeee;
     margin-top: 10px;
@@ -535,6 +535,24 @@ nav .perfil img{
 .table-datos .table-title-filter-report .filter-report button i{
   font-size: 15px;
 }
+/*tabla datos de tabla*/
+
+td button {
+  border: none;
+  padding: 7px 10px;
+  margin: 3px;
+  border-radius: 5px;
+  background: var(--gray--color);
+  color: var(--purple--color);
+ 
+ 
+}
+.td-button{
+display: flex;
+flex-direction: row;
+align-content: center;
+
+}
 @media (max-width: 900px) {
   .title-btn h5{
     font-size: 15px;
@@ -558,6 +576,13 @@ nav .perfil img{
   .formulario .formulario-btn .btn-crud a i{
     margin-right: 0;
   }
+  /*tabla titulo y boton*/
+  .table-title-filter-report{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*tabla*/
 }
 @media (max-width: 420px) {
   /* MENU*/
@@ -570,7 +595,7 @@ nav .perfil img{
     display: none;
   }
   .formulario{
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
   .formulario .formulario-input{
     display: grid;
