@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Menu -->
+    <title>Dashboard</title>
+    <link rel="icon" href="/image/public/logo/logo.png" type="" />
+    <link
+      rel="stylesheet"
+      href="/resources/css/private/soli_asociado_style.css"
+    />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--link de boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/icons/boxicons.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="sidebar open"></header>
+    <nav>
+      <div class="text">
+        <i class="bx bx-menu" id="btn"></i>
+        <div class="input-group buscar">
+          <button class="input-group-text rounded-start-pill">
+            <i class="bx bx-search-alt-2"></i>
+          </button>
+          <input
+            type="text"
+            class="form-control rounded-end-pill"
+            id="inlineFormInputGroupUsername"
+            placeholder="Buscar"
+          />
+        </div>
+      </div>
+      <div class="perfil">
+        <p id="name-user" class="">carlos montano</p>
+        <img
+          id="foto-user"
+          class="img-user"
+          src="/image/private/people/charlie.jpg"
+          alt="foto-perfil"
+        />
+      </div>
+    </nav>
+    <section class="home-section">
+      <div class="dashboard-info">
+        <div class="title-btn">
+          <h5>Formulario de ingreso nuevo asociados</h5>
+          <div class="btn-registro-anterior">
+            <a href="#"
+              >Ver registros anteriores
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="formulario">
+          <div class="formulario-input">
+            <div class="col">
+              <label for="inputNombre" class="form-label">Nombres</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Nombres"
+              />
+            </div>
+            <div class="col">
+              <label for="inputApellidos" class="form-label">Apellidos</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Apellidos"
+              />
+            </div>
+            <div class="col">
+              <label for="inputFechaExpedicion" class="form-label"
+                >Fecha Expedicion</label
+              >
+              <input type="date" class="form-control" />
+            </div>
+
+            <div class="col">
+              <label for="inputDUI" class="form-label">DUI</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="DUI"
+              />
+            </div>
+            <div class="col">
+              <label for="inputNIT" class="form-label">NIT</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="NIT"
+              />
+            </div>
+            <div class="col">
+              <label for="inputPasaporte" class="form-label">Pasaporte</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Pasaporte"
+              />
+            </div>
+
+            <div class="col">
+              <label for="inputTelefono" class="form-label">Telefono</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Telefono"
+              />
+            </div>
+            <div class="col">
+              <label for="inputCelular" class="form-label">Celular</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Celular"
+              />
+            </div>
+            <div class="col">
+              <label for="inputCorreo" class="form-label"
+                >Correo Electronico</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Correo"
+              />
+            </div>
+
+            <div class="col">
+              <label for="inputFechaNacimiento" class="form-label"
+                >Fecha Nacimiento</label
+              >
+              <input type="date" class="form-control" />
+            </div>
+            <div class="col">
+              <label for="inputHijos" class="form-label">Cantidad Hijos</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder=""
+                aria-label="Hijos"
+              />
+            </div>
+            <div class="col">
+              <label for="inputDomicilio" class="form-label">Domicilio</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Domicilio"
+              />
+            </div>
+
+            <div class="col">
+              <label for="inputGrupFamilia" class="form-label"
+                >Cantidad de grupo familiar</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                placeholder=""
+                aria-label="GrupFamilia"
+              />
+            </div>
+            <div class="col">
+              <label for="FamDependiente" class="form-label"
+                >Cantidad de familia dependiente</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                placeholder=""
+                aria-label="FamDependiente"
+              />
+            </div>
+            <div class="col">
+              <label for="inputCorrespondecia" class="form-label"
+                >Correspondecia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Correspondecia"
+              />
+            </div>
+
+            <div class="col">
+                <label for="inputTipoCasa" class="form-label"
+                >Tipo Casa</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Rentada</option>
+                <option value="2">Propia</option>
+                <option value="3">Alquilada</option>
+                <option value="4">Otro</option>
+              </select>
+            </div>
+            <div class="col">
+                <label for="inputSexo" class="form-label"
+                >Sexo</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+              </select>
+            </div>
+            <div class="col">
+                <label for="inputNacionalidad" class="form-label"
+                >Nacionalidad</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">El Salvador</option>
+                <option value="2">Belice</option>
+                <option value="3">Guatemala</option>
+              </select>
+            </div>
+
+            <div class="col">
+                <label for="inputEstCivil" class="form-label"
+                >Estado Civil</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Soltero/a</option>
+                <option value="2">Casado/a</option>
+                <option value="3">Divorciado/a</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="inputOtrosIngresos" class="form-label">Otros Ingresos</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="OtrosIngresos"
+              />
+            </div>
+            <div class="col">
+              <label for="inputPasaporte" class="form-label">Recide</label>
+              <div class="input-group">
+                <select class="form-select" id="Departamento">
+                    <option selected>Departamento</option>
+                    <option value="1">San Salvador</option>
+                    <option value="2">San Miguel</option>
+                  </select>
+                <select class="form-select" id="Municipio" disabled>
+                    <option selected>Municipio</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+            </div>
+          </div>
+          <div class="formulario-btn">
+            <div class="btn-crud" id="guardar">
+              <a href="#">
+                <i class="bx bx-book-add"></i>
+                Guardar
+              </a>
+            </div>
+            <div class="btn-crud">
+              <a href="#" id="actualizar">
+                <i class="bx bx-edit"></i>
+                Actualizar
+              </a>
+            </div>
+
+            <div class="btn-crud">
+              <a href="#" id="eliminar">
+                <i class="bx bx-trash"></i>
+                Eliminar
+              </a>
+            </div>
+            <div class="btn-crud">
+              <a href="#" id="limpiar">
+                <i class="bx bx-file-blank"></i>
+                Limpiar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--para que funcione el menu-->
+    <script
+      type="text/javascript"
+      src="/resources/js/private/soli_asociado_script.js"
+    ></script>
+    <!--para llamar el menu-->
+    <script
+      type="text/javascript"
+      src="/controllers/private/account.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
