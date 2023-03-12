@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Menu -->
-    <title>Solicitud Asociado</title>
+    <title>Dato Conyugue</title>
     <link rel="icon" href="/image/public/logo/logo.png" type="" />
     <link
       rel="stylesheet"
-      href="/resources/css/private/soli_asociado_style.css"
+      href="/resources/css/private/soli_dato_conyugue.css"
     />
     <!-- Boxicons CDN Link -->
     <link
@@ -56,13 +56,13 @@
     <section class="home-section">
       <div class="dashboard-info">
         <div class="title-btn">
-          <h5>Formulario de ingreso nuevo asociados</h5>
-          <div class="btn-registro-anterior">
+          <h5>Datos del Conyugue</h5>
+          <!--<div class="btn-registro-anterior">
             <a href="#"
               >Ver registros anteriores
               <i class="bx bx-right-arrow-alt"></i>
             </a>
-          </div>
+          </div>-->
         </div>
         <div class="formulario">
           <div class="formulario-input">
@@ -85,41 +85,6 @@
               />
             </div>
             <div class="col">
-              <label for="inputFechaExpedicion" class="form-label"
-                >Fecha Expedicion</label
-              >
-              <input type="date" class="form-control" />
-            </div>
-
-            <div class="col">
-              <label for="inputDUI" class="form-label">DUI</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder=""
-                aria-label="DUI"
-              />
-            </div>
-            <div class="col">
-              <label for="inputNIT" class="form-label">NIT</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder=""
-                aria-label="NIT"
-              />
-            </div>
-            <div class="col">
-              <label for="inputPasaporte" class="form-label">Pasaporte</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder=""
-                aria-label="Pasaporte"
-              />
-            </div>
-
-            <div class="col">
               <label for="inputTelefono" class="form-label">Telefono</label>
               <input
                 type="text"
@@ -128,6 +93,7 @@
                 aria-label="Telefono"
               />
             </div>
+
             <div class="col">
               <label for="inputCelular" class="form-label">Celular</label>
               <input
@@ -135,33 +101,6 @@
                 class="form-control"
                 placeholder=""
                 aria-label="Celular"
-              />
-            </div>
-            <div class="col">
-              <label for="inputCorreo" class="form-label"
-                >Correo Electronico</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                placeholder=""
-                aria-label="Correo"
-              />
-            </div>
-
-            <div class="col">
-              <label for="inputFechaNacimiento" class="form-label"
-                >Fecha Nacimiento</label
-              >
-              <input type="date" class="form-control" />
-            </div>
-            <div class="col">
-              <label for="inputHijos" class="form-label">Cantidad Hijos</label>
-              <input
-                type="number"
-                class="form-control"
-                placeholder=""
-                aria-label="Hijos"
               />
             </div>
             <div class="col">
@@ -173,110 +112,71 @@
                 aria-label="Domicilio"
               />
             </div>
+            <div class="col">
+              <label for="inputFechaNacimiento" class="form-label"
+                >Fecha Nacimiento</label
+              >
+              <input type="date" class="form-control" />
+            </div>
 
             <div class="col">
-              <label for="inputGrupFamilia" class="form-label"
-                >Cantidad de grupo familiar</label
-              >
+              <label for="inputOcupacion" class="form-label">Ocupacion</label>
               <input
-                type="number"
+                type="text"
                 class="form-control"
                 placeholder=""
-                aria-label="GrupFamilia"
+                aria-label="Ocupacion"
               />
             </div>
             <div class="col">
-              <label for="FamDependiente" class="form-label"
-                >Cantidad de familia dependiente</label
-              >
+              <label for="inputCargo" class="form-label">Cargo</label>
               <input
-                type="number"
+                type="text"
                 class="form-control"
                 placeholder=""
-                aria-label="FamDependiente"
+                aria-label="Cargo"
               />
             </div>
             <div class="col">
-              <label for="inputCorrespondecia" class="form-label"
-                >Correspondecia</label
+              <label for="inputFechaContrato" class="form-label"
+                >Fecha de Contrato</label
+              >
+              <input type="date" class="form-control" />
+            </div>
+
+            <div class="col">
+              <label for="inputDireccionTrabajo" class="form-label"
+                >Direccion de trabajo</label
               >
               <input
                 type="text"
                 class="form-control"
                 placeholder=""
-                aria-label="Correspondecia"
-              />
-            </div>
-
-            <div class="col">
-                <label for="inputTipoCasa" class="form-label"
-                >Tipo Casa</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccione una opción</option>
-                <option value="1">Rentada</option>
-                <option value="2">Propia</option>
-                <option value="3">Alquilada</option>
-                <option value="4">Otro</option>
-              </select>
-            </div>
-            <div class="col">
-                <label for="inputSexo" class="form-label"
-                >Sexo</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccione una opción</option>
-                <option value="1">Masculino</option>
-                <option value="2">Femenino</option>
-              </select>
-            </div>
-            <div class="col">
-                <label for="inputNacionalidad" class="form-label"
-                >Nacionalidad</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccione una opción</option>
-                <option value="1">El Salvador</option>
-                <option value="2">Belice</option>
-                <option value="3">Guatemala</option>
-              </select>
-            </div>
-
-            <div class="col">
-                <label for="inputEstCivil" class="form-label"
-                >Estado Civil</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccione una opción</option>
-                <option value="1">Soltero/a</option>
-                <option value="2">Casado/a</option>
-                <option value="3">Divorciado/a</option>
-              </select>
-            </div>
-            <div class="col">
-              <label for="inputOtrosIngresos" class="form-label">Otros Ingresos</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder=""
-                aria-label="OtrosIngresos"
+                aria-label="DireccionTrabajo"
               />
             </div>
             <div class="col">
-              <label for="inputPasaporte" class="form-label">Recide</label>
-              <div class="input-group">
-                <select class="form-select" id="Departamento">
-                    <option selected>Departamento</option>
-                    <option value="1">San Salvador</option>
-                    <option value="2">San Miguel</option>
-                  </select>
-                <select class="form-select" id="Municipio" disabled>
-                    <option selected>Municipio</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
+              <label for="inputEsSocio" class="form-label"
+                >¿Es socio de la cooperativa?</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Si</option>
+                <option value="2">Aun no</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="inputEsSocio" class="form-label"
+                >Persona a convertirse en socio</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Carlos Roberto Montano💙</option>
+                <option value="2">Katya Vanesa Sanchez Estrada💛</option>
+                <option value="3">Diego Alberto Vasconcelos Baisa💜</option>
+                <option value="4">Fatima Zuleima Fuentes Rivas🧡</option>
+                <option value="5">Gerardo Jose Mendez Monico🤍</option>
+              </select>
             </div>
           </div>
           <div class="formulario-btn">
@@ -307,12 +207,52 @@
             </div>
           </div>
         </div>
+        <div class="table-datos">
+          <div class="table-title-filter-report">
+            <div class="table-title">
+              <h6>Registro anterior</h6>
+            </div>
+            <div class="filter-report">
+              <input type="date" class="form-control"/>
+              <button type="button" class="btn btn-warning"><i class='bx bx-down-arrow-alt'></i>Descargar Reporte</button>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
     <!--para que funcione el menu-->
     <script
       type="text/javascript"
-      src="/resources/js/private/soli_asociado_script.js"
+      src="/resources/js/private/soli_dato_conyugue_script.js"
     ></script>
     <!--para llamar el menu-->
     <script
