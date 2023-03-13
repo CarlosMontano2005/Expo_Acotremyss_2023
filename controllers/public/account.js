@@ -17,99 +17,30 @@ const NAV = document.querySelector('nav');
     //if (JSON.session) {
         // Se comprueba si existe un alias definido para el usuario, de lo contrario se muestra un mensaje con la excepción.
        // if (JSON.status) {
-            HEADER.innerHTML = `<div >
-            <div class="logo-details">
-              <!--<i class='bx bxl-c-plus-plus icon'></i>-->
-              <div class="logo_name">SAC</div>
-              <!--<i class='bx bx-menu' id="btn"></i>-->
+            HEADER.innerHTML = `<div class="banner">
+            <div class="navbar">
+                <img src="/image/public/logo/logo.png" class="logo">
+                <ul>
+                    <li><b><a href="#">Inicio</a></b></li>
+                    <li><b><a href="#">Contactos</a></b></li>
+                    <li><b><a href="#">Nosotros</a></b></li>
+                    <li><b><a href="#">Servicios</a></b></li>
+                    <li><b><a href="#">Comvenios</a></b></li>
+                    <li><b><a href="#">Emprendedores</a></b></li>
+                    <li><b><a href="#">Historia</a></b></li>
+                </ul>
             </div>
-            <div class="profile-details">
-              <div class="profile-btn">
-                <div class="btn-user">
-                  <a href="#"><i class="bx bxs-user"></i></a>
+
+            <div class="content">
+                <h1>Acotremyss</h1>
+                <p><b>Asociación Cooperativa De Aprovisionamiento, <br> Ahorro y Credito</b></p>
+                <div>
+                    <button type="button"><span></span>Inisiar sesion</button>
+                    <button type="button"><span></span>Crear cuenta</button>
                 </div>
-                <div class="btn_three_points">
-                  <a href="#">
-                    <i class="bx bxs-grid" ></i>
-                  </a>
-                </div>
-              </div>
-              <div class="profile-content">
-                <img
-                  src="/image/private/people/charlie.jpg"
-                  alt="profileImg"
-                  id="img-perfil"
-                />
-              </div>
-              <div class="name-gmail">
-                <div class="profile_name">Hola Charlie</div>
-                <div class="gmail">montanoroberto@gmail.com</div>
-              </div>
             </div>
-            <ul class="nav-list">
-              <li>
-                <a href="#">
-                  <i class="bx bx-home-alt"></i>
-                  <span class="links_name">Dashboard</span>
-                </a>
-                <span class="tooltip">Dashboard</span>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bx bx-folder"></i>
-                  <span class="links_name">Solicitudes</span>
-                </a>
-                <span class="tooltip">Solicitudes</span>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bx bx-group"></i>
-                  <span class="links_name">Asociados</span>
-                </a>
-                <span class="tooltip">Asociados</span>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bx bx-trending-up"></i>
-                  <span class="links_name">Beneficios</span>
-                </a>
-                <span class="tooltip">Beneficios</span>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bx bx-edit"></i>
-                  <span class="links_name">Control</span>
-                </a>
-                <span class="tooltip">Control</span>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bx bx-sitemap"></i>
-                  <span class="links_name">Sistema</span>
-                </a>
-                <span class="tooltip">Sistema</span>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bx bx-log-out"></i>
-                  <span class="links_name">Cerrar sistema</span>
-                </a>
-                <span class="tooltip">Cerrar sistema</span>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bx bx-cog"></i>
-                  <span class="links_name">Ajustes</span>
-                </a>
-                <span class="tooltip">Ajustes</span>
-              </li>
-    
-              <!-- <li class="profile">
-                            
-                            <a href="#"><i class='bx bx-door-open'></i></a>
-                        </li>-->
-            </ul>
-          </div>`;
+
+        </div>`;
          /* NAV.innerHTML = ` <div class="text" >
           <i class="bx bx-menu" id="btn"></i>
           <div class="input-group buscar">
