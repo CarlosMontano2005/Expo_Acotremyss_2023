@@ -376,7 +376,7 @@ section::-webkit-scrollbar {
   width: 10px;
 }
 section::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right, #845ed7 0%, #845ed7 74%) ;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); ;
   border-radius: 30px;
 }
 

@@ -376,7 +376,7 @@ section::-webkit-scrollbar {
   width: 10px;
 }
 section::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right, #845ed7 0%, #845ed7 74%) ;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
 }
 
@@ -526,7 +526,7 @@ nav .perfil img{
 }
 
 .table-datos .table-title-filter-report .filter-report input{
-  width: 120px;
+  width: 130px;
 }
 
 .table-datos .table-title-filter-report .filter-report button{
@@ -535,8 +535,36 @@ nav .perfil img{
 .table-datos .table-title-filter-report .filter-report button i{
   font-size: 15px;
 }
+.table-datos .table-title-filter-report .filter-report .buscar-table{
+  width: 300px;
+}
+.table-datos .table-title-filter-report .filter-report .buscar-table button{
+  width: 40px;
+}
 /*tabla datos de tabla*/
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: center;
+}
+.header_fixed {
+  max-height: 32vh;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 10px;
+  /*border: 1px solid #CCCCCC;
+  border-radius: 25px;*/
+}
+
+.header_fixed thead th {
+  position: sticky;
+  top: 0;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  
+}
 td button {
   border: none;
   padding: 7px 10px;
@@ -544,15 +572,34 @@ td button {
   border-radius: 5px;
   background: var(--gray--color);
   color: var(--purple--color);
- 
- 
+  transition: var(--tran-04);
 }
-.td-button{
-display: flex;
-flex-direction: row;
-align-content: center;
+td button:hover{
+  background: var(--purple--color);
+  color: var(--gray--color);
+  transition: var(--tran-04);
+}
 
+.td-button{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+
 @media (max-width: 900px) {
   .title-btn h5{
     font-size: 15px;
@@ -581,8 +628,27 @@ align-content: center;
     display: flex;
     flex-direction: column;
   }
+  .table-datos .table-title-filter-report .filter-report{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+
+  .table-datos .table-title-filter-report .filter-report input, .table-datos .table-title-filter-report .filter-report button{
+    width: 100%;
+  }
+
+  .table-datos .table-title-filter-report .filter-report .buscar-table{
+    width: 100%;
+  }
+
+  .table-datos .table-title-filter-report .filter-report .buscar-table input{
+    width: calc(100% - 40px);
+  }
 
   /*tabla*/
+
 }
 @media (max-width: 420px) {
   /* MENU*/
