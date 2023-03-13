@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Menu -->
+    <title>Dashboard</title>
+    <link rel="icon" href="/image/public/logo/logo.png" type="" />
+    <link rel="stylesheet" href="/resources/css/private/dashboard_style.css" />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--link de boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/icons/boxicons.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  
+  <body>
+    <header class="sidebar open"></header>
+    <nav>
+      <div class="text" >
+        <i class="bx bx-menu" id="btn"></i>
+        <div class="input-group buscar">
+          <button class="input-group-text rounded-start-pill">
+            <i class="bx bx-search-alt-2"></i>
+          </button>
+          <input
+            type="text"
+            class="form-control rounded-end-pill"
+            id="inlineFormInputGroupUsername"
+            placeholder="Buscar"
+          />
+        </div>
+      </div>
+      <div class="perfil">
+          <p id="name-user" class="">carlos montano</p>
+          <img id="foto-user" class="img-user" src="/image/private/people/charlie.jpg" alt="foto-perfil">
+      </div>
+    </nav>
+    <section class="home-section">
+      <div class="dashboard-info">
+       
+      </div>
+    </section>
+    <!--para que funcione el menu-->
+    <script
+      type="text/javascript"
+      src="/resources/js/private/dashboard_script.js"
+    ></script>
+    <!--para llamar el menu-->
+    <script
+      type="text/javascript"
+      src="/controllers/private/account.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

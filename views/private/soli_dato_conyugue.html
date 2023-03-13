@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Menu -->
+    <title>Dato Conyugue</title>
+    <link rel="icon" href="/image/public/logo/logo.png" type="" />
+    <link
+      rel="stylesheet"
+      href="/resources/css/private/soli_dato_conyugue.css"
+    />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--link de boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/icons/boxicons.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="sidebar open"></header>
+    <nav>
+      <div class="text">
+        <i class="bx bx-menu" id="btn"></i>
+        <div class="input-group buscar">
+          <button class="input-group-text rounded-start-pill">
+            <i class="bx bx-search-alt-2"></i>
+          </button>
+          <input
+            type="text"
+            class="form-control rounded-end-pill"
+            id="inlineFormInputGroupUsername"
+            placeholder="Buscar"
+          />
+        </div>
+      </div>
+      <div class="perfil">
+        <p id="name-user" class="">carlos montano</p>
+        <img
+          id="foto-user"
+          class="img-user"
+          src="/image/private/people/charlie.jpg"
+          alt="foto-perfil"
+        />
+      </div>
+    </nav>
+    <section class="home-section">
+      <div class="dashboard-info">
+        <div class="title-btn">
+          <h5>Datos del Conyugue</h5>
+          <!--<div class="btn-registro-anterior">
+            <a href="#"
+              >Ver registros anteriores
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </div>-->
+        </div>
+        <div class="formulario">
+          <div class="formulario-input">
+            <div class="col">
+              <label for="inputNombre" class="form-label">Nombres</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Nombres"
+              />
+            </div>
+            <div class="col">
+              <label for="inputApellidos" class="form-label">Apellidos</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Apellidos"
+              />
+            </div>
+            <div class="col">
+              <label for="inputTelefono" class="form-label">Telefono</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Telefono"
+              />
+            </div>
+
+            <div class="col">
+              <label for="inputCelular" class="form-label">Celular</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Celular"
+              />
+            </div>
+            <div class="col">
+              <label for="inputDomicilio" class="form-label">Domicilio</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Domicilio"
+              />
+            </div>
+            <div class="col">
+              <label for="inputFechaNacimiento" class="form-label"
+                >Fecha Nacimiento</label
+              >
+              <input type="date" class="form-control" />
+            </div>
+
+            <div class="col">
+              <label for="inputOcupacion" class="form-label">Ocupacion</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Ocupacion"
+              />
+            </div>
+            <div class="col">
+              <label for="inputCargo" class="form-label">Cargo</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Cargo"
+              />
+            </div>
+            <div class="col">
+              <label for="inputFechaContrato" class="form-label"
+                >Fecha de Contrato</label
+              >
+              <input type="date" class="form-control" />
+            </div>
+
+            <div class="col">
+              <label for="inputDireccionTrabajo" class="form-label"
+                >Direccion de trabajo</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="DireccionTrabajo"
+              />
+            </div>
+            <div class="col">
+              <label for="inputEsSocio" class="form-label"
+                >¿Es socio de la cooperativa?</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Si</option>
+                <option value="2">Aun no</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="inputEsSocio" class="form-label"
+                >Persona a convertirse en socio</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Carlos Roberto Montano💙</option>
+                <option value="2">Katya Vanesa Sanchez Estrada💛</option>
+                <option value="3">Diego Alberto Vasconcelos Baisa💜</option>
+                <option value="4">Fatima Zuleima Fuentes Rivas🧡</option>
+                <option value="5">Gerardo Jose Mendez Monico🤍</option>
+              </select>
+            </div>
+          </div>
+          <div class="formulario-btn">
+            <div class="btn-crud" id="guardar">
+              <a href="#">
+                <i class="bx bx-book-add"></i>
+                Guardar
+              </a>
+            </div>
+            <div class="btn-crud">
+              <a href="#" id="actualizar">
+                <i class="bx bx-edit"></i>
+                Actualizar
+              </a>
+            </div>
+
+            <div class="btn-crud">
+              <a href="#" id="eliminar">
+                <i class="bx bx-trash"></i>
+                Eliminar
+              </a>
+            </div>
+            <div class="btn-crud">
+              <a href="#" id="limpiar">
+                <i class="bx bx-file-blank"></i>
+                Limpiar
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="table-datos">
+          <div class="table-title-filter-report">
+            <div class="table-title">
+              <h6>Registro anterior</h6>
+            </div>
+            <div class="filter-report">
+              <div class="input-group buscar-table">
+                <button class="input-group-text rounded-start-pill">
+                  <i class="bx bx-search-alt-2"></i>
+                </button>
+                <input
+                  type="text"
+                  class="form-control rounded-end-pill"
+                  id="inlineFormInputGroupBuscarTabla"
+                  placeholder="Buscar"
+                />
+              </div>
+              <input type="date" class="form-control" />
+              <button type="button" class="btn btn-warning">
+                <i class="bx bx-down-arrow-alt"></i>Descargar Reporte
+              </button>
+            </div>
+          </div>
+          <div class="header_fixed">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Nombres</th>
+                  <th scope="col">Apellidos</th>
+                  <th scope="col">Telefono</th>
+                  <th scope="col">Celular</th>
+                  <th scope="col">Nacimiento</th>
+                  <th scope="col">Ocupaciòn</th>
+                  <th scope="col">Cargo</th>
+                  <th scope="col">Fecha de Contrato</th>
+                  <th scope="col">Direccion de trabajo</th>
+                  <th scope="col">Socio de la cooperativa</th>
+                  <th scope="col">Relacion con</th>
+                  <th scope="col">Acciòn</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>-</td>
+                  <td>6068-9508</td>
+                  <td>7890-0865</td>
+                  <td>-</td>
+
+                  <td>19-02-2005</td>
+                  <td>-</td>
+
+                  <td>Empleado</td>
+                  <td>8-4-2022</td>
+                  <td>-</td>
+
+                  <td>si</td>
+                  <td>Carlos Montano</td>
+                  <td class="td-button">
+                    <button class="button_edit">
+                      <i class="bx bx-show"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>-</td>
+                  <td>6068-9508</td>
+                  <td>7890-0865</td>
+                  <td>-</td>
+
+                  <td>7-07-2004</td>
+                  <td>-</td>
+
+                  <td>Empleado</td>
+                  <td>8-4-2022</td>
+                  <td>-</td>
+
+                  <td>si</td>
+                  <td>Katya Sanchez</td>
+                  <td class="td-button">
+                    <button class="button_edit">
+                      <i class="bx bx-show"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>-</td>
+                  <td>6068-9508</td>
+                  <td>7890-0865</td>
+                  <td>-</td>
+
+                  <td>7-03-2005</td>
+                  <td>-</td>
+
+                  <td>Empleado</td>
+                  <td>8-4-2022</td>
+                  <td>-</td>
+
+                  <td>si</td>
+                  <td>Diego Vasconcelos</td>
+                  <td class="td-button">
+                    <button class="button_edit">
+                      <i class="bx bx-show"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>-</td>
+                  <td>6068-9508</td>
+                  <td>7890-0865</td>
+                  <td>-</td>
+
+                  <td>15-11-2005</td>
+                  <td>-</td>
+
+                  <td>Empleado</td>
+                  <td>8-4-2022</td>
+                  <td>-</td>
+
+                  <td>si</td>
+                  <td>Fatima Fuentes</td>
+                  <td class="td-button">
+                    <button class="button_edit">
+                      <i class="bx bx-show"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>-</td>
+                  <td>6068-9508</td>
+                  <td>7890-0865</td>
+                  <td>-</td>
+
+                  <td>24-08-2005</td>
+                  <td>-</td>
+
+                  <td>Empleado</td>
+                  <td>8-4-2022</td>
+                  <td>-</td>
+
+                  <td>si</td>
+                  <td>Gerardo Monico</td>
+                  <td class="td-button">
+                    <button class="button_edit">
+                      <i class="bx bx-show"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--para que funcione el menu-->
+    <script
+      type="text/javascript"
+      src="/resources/js/private/soli_dato_conyugue_script.js"
+    ></script>
+    <!--para llamar el menu-->
+    <script
+      type="text/javascript"
+      src="/controllers/private/account.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
