@@ -563,9 +563,8 @@ table {
   width: 100%;
   overflow: auto;
   box-shadow: 10px;
-  border: 1px solid #CCCCCC;
-  border-radius: 25px;
-  
+  /*border: 1px solid #CCCCCC;
+  border-radius: 25px;*/
 }
 
 .header_fixed thead th {
