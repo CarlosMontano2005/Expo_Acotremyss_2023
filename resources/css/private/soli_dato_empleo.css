@@ -458,6 +458,11 @@ nav .perfil img{
   align-items: center;
   font-size: 13px;
 }
+.empleo-formal , .empleo-informal{
+  display: grid;
+  grid-template-columns: 45% 54%;
+  gap: 20px;
+}
 .formulario{
   background: #eeeeee;
   margin-top: 10px;
@@ -468,8 +473,8 @@ nav .perfil img{
 }
 .formulario .formulario-input{
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap:50px;
+  grid-template-columns: auto auto;
+  grid-column-gap:10px;
   grid-row-gap: 5px;
   
 }
@@ -482,14 +487,15 @@ nav .perfil img{
   color: var(--purple--color);
 }
 .formulario .formulario-btn{
-  display: flex;
-  justify-content:center;
-  margin-top: 15px;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 5px;
 }
 .formulario .formulario-btn .btn-crud{
   background: var(--gray--color);
-  padding: 5px 10px;
+  padding: 5px 5px;
   border-radius: 5px;
 }
 .formulario .formulario-btn .btn-crud a{
@@ -510,13 +516,15 @@ nav .perfil img{
     margin-top: 10px;
     padding: 10px;
     border-radius: 25px;
-    margin-bottom: 30px;
-    font-size: 12px;
+    margin-bottom: 10px;
+    font-size: 5px;
 }
 .table-datos .table-title-filter-report{
   display: flex;
   justify-content: space-between;
+ 
 }
+
 .table-datos .table-title-filter-report .filter-report{
   display: flex;
   gap: 20px;
@@ -527,17 +535,17 @@ nav .perfil img{
 }
 
 .table-datos .table-title-filter-report .filter-report input{
-  width: 130px;
+  width: auto;
 }
 
 .table-datos .table-title-filter-report .filter-report button{
-  width: 300px;
+  width: auto;
 }
 .table-datos .table-title-filter-report .filter-report button i{
   font-size: 15px;
 }
 .table-datos .table-title-filter-report .filter-report .buscar-table{
-  width: 300px;
+  width: 100px;
 }
 .table-datos .table-title-filter-report .filter-report .buscar-table button{
   width: 40px;
@@ -551,12 +559,13 @@ table {
   text-align: center;
 }
 .header_fixed {
-  max-height: 32vh;
+  max-height: 40vh;
   width: 100%;
   overflow: auto;
   box-shadow: 10px;
-  /*border: 1px solid #CCCCCC;
-  border-radius: 25px;*/
+  border: 1px solid #CCCCCC;
+  border-radius: 25px;
+  
 }
 
 .header_fixed thead th {
@@ -638,7 +647,6 @@ td button:hover{
 
   .table-datos .table-title-filter-report .filter-report input, .table-datos .table-title-filter-report .filter-report button{
     width: 100%;
-    ;
   }
 
   .table-datos .table-title-filter-report .filter-report .buscar-table{
