@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Menu -->
-    <title>Dato Conyugue</title>
+    <title>Dato Referidos</title>
     <link rel="icon" href="/image/public/logo/logo.png" type="" />
-    <link rel="stylesheet" href="/resources/css/private/soli_dato_empleo.css" />
+    <link rel="stylesheet" href="/resources/css/private/soli_dato_referencia.css" />
     <!-- Boxicons CDN Link -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -52,7 +52,7 @@
     <section class="home-section">
       <div class="dashboard-info">
         <div class="title-btn">
-          <h5>Empleo Formal</h5>
+          <h5>Referencias</h5>
           <!--<div class="btn-registro-anterior">
             <a href="#"
               >Ver registros anteriores
@@ -77,33 +77,29 @@
                 </select>
               </div>  
               <div class="col">
-                <label for="inputActividadActual" class="form-label">Actividad Actual</label>
+                <label for="inputNombre" class="form-label">Nombre</label>
                 <input
                   type="text"
                   class="form-control"
                   placeholder=""
-                  aria-label="ActividadActual"
+                  aria-label="Nombre"
                 />
               </div>
               <div class="col">
-                <label for="inputLugarTrabajo" class="form-label">Lugar de trabajo</label>
+                <label for="inputApellido" class="form-label">Apellido</label>
                 <input
                   type="text"
                   class="form-control"
                   placeholder=""
-                  aria-label="LugarTrabajo"
+                  aria-label="Apellido"
                 />
               </div>
               <div class="col">
-                <label for="inputDepartamentoSeccion" class="form-label">Departamento o sección</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder=""
-                  aria-label="Celular"
-                />
+                <label for="inputfechaNacimiento" class="form-label"
+                  >Fecha de Nacimiento</label
+                >
+                <input type="date" class="form-control" />
               </div>
-
               <div class="col">
                 <label for="inputTelefono" class="form-label">Telefono</label>
                 <input
@@ -114,29 +110,27 @@
                 />
               </div>
               <div class="col">
-                <label for="inputCargo" class="form-label">Cargo</label>
+                <label for="inputParentesco" class="form-label"
+                >Tipo Casa</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Padre</option>
+                <option value="2">Madre</option>
+                <option value="3">Tío</option>
+                <option value="4">Tía</option>
+              </select>
+            </div>
+              <div class="col">
+                <label for="inputSalario" class="form-label">Dirección de trabajo</label>
                 <input
                   type="text"
                   class="form-control"
                   placeholder=""
-                  aria-label="Cargo"
+                  aria-label="DireccionTrabajo"
                 />
               </div>
-              <div class="col">
-                <label for="inputSalario" class="form-label">Salario</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder=""
-                  aria-label="Ocupacion"
-                />
-              </div>
-              <div class="col">
-                <label for="inputfechaContrato" class="form-label"
-                  >Fecha de Contrato</label
-                >
-                <input type="date" class="form-control" />
-              </div>
+              
             </div>
             <div class="formulario-btn">
               <div class="btn-crud" id="guardar">
